@@ -59,7 +59,9 @@ docker compose down
 
 9. Código de conclusão impresso pelo verificador:
 
+
 ```
-(cole aqui)
+VIASERRA-26175138-3F75B0CF
+
 ```
 
