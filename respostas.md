@@ -48,7 +48,12 @@ No comando -p 80:7042, o número 80 é a porta do host e 7042 é a porta do cont
 ## Parte 4 · Primeiro docker-compose
 
 7. Escreva os dois comandos `docker run` que fariam o mesmo que o seu `docker-compose.yml`.
+docker run -d --name portal -p 8038:80 murilodemarco/viaserra-portal:1.0-26175138
+docker run -d --name manutencao -p 7038:80 avaliacao-docker-viaserra-manutencao
+
 8. Qual comando derruba os dois containers de uma vez?
+docker compose down
+
 
 ## Verificador
 

@@ -5,15 +5,13 @@
 # Não mude a indentação: no YAML, os espaços no começo da linha fazem parte da sintaxe.
 
 services:
-
   portal:
-    image: ____                # a imagem que você publicou na Parte 2 (usuario/nome:tag)
+    image: murilodemarco/viaserra-portal:1.0-26175138
     ports:
-      - "____:80"              # porta do host: 8000 + XX
+      - "8038:80"
     restart: unless-stopped
-
   manutencao:
-    build: ____                # a pasta onde está o Dockerfile que você corrigiu na Parte 3
+    build: ./manutencao
     ports:
-      - "____:80"              # porta do host: 7000 + XX
+      - "7038:80"
     restart: unless-stopped
